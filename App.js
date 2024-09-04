@@ -1,8 +1,7 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import WelcomePage from "./src/WelcomePage";
-import CurrencyConverter from "./src/currencyconverter";
+import HeartRate from "./src/heartRate";
 
 // This is a simple example of a React Native app.
 export default function App() {
@@ -10,8 +9,7 @@ export default function App() {
     <View style={styles.container}>
       <React.Fragment>
           <StatusBar style="auto" />
-            {WelcomePage ? <WelcomePage /> : <Text>We ran into some issues! {id}</Text>}
-            <CurrencyConverter />
+          {HeartRate ? <HeartRate /> : <Text>We ran into some issues! {id}</Text>}
       </React.Fragment>
     </View>
   );
